@@ -1,0 +1,9 @@
+project: savantenvs/3Dmigoto
+target: decompile-hlsl
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/decompile-hlsl/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_decompile_hlsl
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,9 @@
+project: savantenvs/3Dmigoto
+target: assemble
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/assemble/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_assemble
+    libfuzzer: true
+    timeout: 5

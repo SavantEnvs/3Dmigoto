@@ -1,0 +1,82 @@
+asm TestShaders/emit_then_cut.asm: bytes=332 errors=0 fourcc=DXBC fnv=5f626d80 type=2 sm=4.0 decls=5 insts=9
+asm TestShaders/emit_then_cut_stream.asm: bytes=2068 errors=0 fourcc=DXBC fnv=513b812f type=2 sm=5.0 decls=25 insts=55
+asm TestShaders/resinfo_rcpFloat.asm: bytes=524 errors=0 fourcc=DXBC fnv=8a7e7b05 type=0 sm=5.0 decls=4 insts=13
+asm TestShaders/sync.asm: bytes=236 errors=0 fourcc=DXBC fnv=d059879c type=5 sm=5.0 decls=5 insts=17
+asm TestShaders/uaddc_usubb.asm: bytes=424 errors=0 fourcc=DXBC fnv=7a603974 decode-error
+hlsl TestShaders/emit_then_cut.asm: model=gs_4_0 error=1 patched=0 bytes=396 lines=18 fnv=c77143b8 main=1
+hlsl TestShaders/emit_then_cut_stream.asm: model=gs_5_0 error=1 patched=0 bytes=1651 lines=58 fnv=b1d8d50a main=1
+hlsl TestShaders/sync.asm: model=cs_5_0 error=0 patched=0 bytes=918 lines=37 fnv=2e76658c main=0
+hlsl TestShaders/uaddc_usubb.asm: model= error=1 patched=0 bytes=0 lines=0 fnv=811c9dc5 main=0
+ini mayhem/test/loader.ini: loader=1 target=Game Launcher.exe module=d3d11.dll check_version=0 delay=250 system=1 hook=1 allow=2
+ini mayhem/test/system_only.ini: loader=1 target=x.exe module= check_version=1 delay=0 system=1 hook=0 allow=-3
+ini Dependencies/d3dx.ini: loader=1 target=(none) module=(none) check_version=1 delay=-7 system=1 hook=0 allow=1
+dxbc TestShaders/BinaryDecompiler/apps/shaders/ExtrudeGS.o: type=2 sm=4.0 decls=12 insts=97
+dxbc TestShaders/BinaryDecompiler/apps/shaders/generic/ClippingVS.o: type=1 sm=4.0 decls=9 insts=25
+dxbc TestShaders/BinaryDecompiler/apps/shaders/generic/idVS.o: type=1 sm=4.0 decls=10 insts=20
+dxbc TestShaders/BinaryDecompiler/apps/shaders/generic/postProcessing/sobel.o: type=0 sm=4.0 decls=4 insts=51
+dxbc TestShaders/BinaryDecompiler/apps/shaders/generic/templatePS.o: type=0 sm=4.0 decls=4 insts=2
+dxbc TestShaders/BinaryDecompiler/apps/shaders/generic/wavyVS.o: type=1 sm=4.0 decls=8 insts=22
+dxbc TestShaders/BinaryDecompiler/apps/shaders/LambertLitDX9SolidPS.o: type=0 sm=2.0 decls=2 insts=2
+dxbc TestShaders/BinaryDecompiler/apps/shaders/LambertLitSolidPS.o: type=0 sm=4.0 decls=2 insts=2
+dxbc TestShaders/BinaryDecompiler/apps/shaders/SubroutinesVS.o: type=1 sm=5.0 decls=9 insts=20
+dxbc TestShaders/BinaryDecompiler/apps/shaders/tessellationPS.o: type=0 sm=5.0 decls=3 insts=2
+dxbc TestShaders/BinaryDecompiler/cs5/BasicCompute11.o: type=5 sm=5.0 decls=7 insts=7
+dxbc TestShaders/BinaryDecompiler/cs5/Issue11.o: type=5 sm=5.0 decls=9 insts=58
+dxbc TestShaders/BinaryDecompiler/cs5/ThreadGroupSharedMem.o: type=5 sm=5.0 decls=7 insts=25
+dxbc TestShaders/BinaryDecompiler/gs4/PipesGS.o: type=2 sm=4.0 decls=26 insts=224
+dxbc TestShaders/BinaryDecompiler/hs5/basic_change_pos.o: type=3 sm=5.0 decls=0 insts=0
+dxbc TestShaders/BinaryDecompiler/hs5/DecalTessellation11.o: type=3 sm=5.0 decls=0 insts=0
+dxbc TestShaders/BinaryDecompiler/hs5/two_fork_phases.o: type=3 sm=5.0 decls=0 insts=0
+dxbc TestShaders/BinaryDecompiler/ps3/constTexCoord.o: type=0 sm=3.0 decls=4 insts=3
+dxbc TestShaders/BinaryDecompiler/ps3/fxaa.o: type=0 sm=3.0 decls=8 insts=174
+dxbc TestShaders/BinaryDecompiler/ps4/derivative.o: type=0 sm=4.0 decls=3 insts=4
+dxbc TestShaders/BinaryDecompiler/ps4/fxaa.o: type=0 sm=5.0 decls=7 insts=160
+dxbc TestShaders/BinaryDecompiler/ps4/issue8.o: type=0 sm=4.0 decls=7 insts=14
+dxbc TestShaders/BinaryDecompiler/ps4/primID.o: type=0 sm=4.0 decls=3 insts=4
+dxbc TestShaders/BinaryDecompiler/ps5/array_of_textures.o: type=0 sm=5.0 decls=7 insts=4
+dxbc TestShaders/BinaryDecompiler/ps5/conservative_depth_ge.o: type=0 sm=5.0 decls=5 insts=3
+dxbc TestShaders/BinaryDecompiler/ps5/coverage.o: type=0 sm=5.0 decls=7 insts=6
+dxbc TestShaders/BinaryDecompiler/ps5/interface_arrays.o: type=0 sm=5.0 decls=24 insts=30
+dxbc TestShaders/BinaryDecompiler/ps5/interpolation.o: type=0 sm=5.0 decls=11 insts=6
+dxbc TestShaders/BinaryDecompiler/ps5/precision.o: type=0 sm=5.0 decls=8 insts=5
+dxbc TestShaders/BinaryDecompiler/ps5/sample1DLod.o: type=0 sm=5.0 decls=8 insts=4
+dxbc TestShaders/BinaryDecompiler/ps5/sample3D.o: type=0 sm=5.0 decls=9 insts=10
+dxbc TestShaders/BinaryDecompiler/ps5/twoSideDepthWrite.o: type=0 sm=5.0 decls=8 insts=8
+dxbc TestShaders/BinaryDecompiler/vs2/intrep.o: type=1 sm=2.0 decls=5 insts=7
+dxbc TestShaders/BinaryDecompiler/vs2/pointsize.o: type=1 sm=2.0 decls=5 insts=3
+dxbc TestShaders/BinaryDecompiler/vs4/array_input.o: type=1 sm=4.0 decls=17 insts=7
+dxbc TestShaders/BinaryDecompiler/vs4/continuec.o: type=1 sm=5.0 decls=5 insts=16
+dxbc TestShaders/BinaryDecompiler/vs4/issue21.o: type=1 sm=4.0 decls=3 insts=4
+dxbc TestShaders/BinaryDecompiler/vs4/mov.o: type=1 sm=4.0 decls=2 insts=2
+dxbc TestShaders/BinaryDecompiler/vs4/struct_const.o: type=1 sm=4.0 decls=6 insts=10
+dxbc TestShaders/BinaryDecompiler/vs5/any.o: type=1 sm=5.0 decls=4 insts=5
+dxbc TestShaders/BinaryDecompiler/vs5/exp.o: type=1 sm=5.0 decls=14 insts=16
+dxbc TestShaders/BinaryDecompiler/vs5/mad_imm.o: type=1 sm=5.0 decls=4 insts=2
+dxbc TestShaders/BinaryDecompiler/vs5/rcp.o: type=1 sm=5.0 decls=8 insts=5
+dxbc TestShaders/GameExamples/Blacklist/6c2fc2b0b3401423-hs.bin: type=3 sm=5.0 decls=0 insts=0
+dxbc TestShaders/GameExamples/Blacklist/d2775ae3a4a4351d-ps.bin: decode-error
+dxbc TestShaders/GameExamples/Cars/fefda141c125c8c5-ps.bin: type=0 sm=4.1 decls=33 insts=79
+dxbc TestShaders/GameExamples/DOAXVV/ba2ad61fa36ff709-vs.bin: type=1 sm=5.0 decls=29 insts=186
+dxbc TestShaders/GameExamples/Hellblade/9a9de1c9f996e820-ps.bin: type=0 sm=5.0 decls=10 insts=18
+dxbc TestShaders/GameExamples/MGSV/000000000546607b-vs.bin: type=1 sm=4.0 decls=8 insts=7
+dxbc TestShaders/GameExamples/MGSV/00000000190922c2-ps.bin: type=0 sm=4.0 decls=6 insts=3
+dxbc TestShaders/GameExamples/MGSV/000000003c3f12bd-vs.bin: type=1 sm=4.0 decls=6 insts=4
+dxbc TestShaders/GameExamples/MGSV/0000000057ca916d-ps.bin: type=0 sm=5.0 decls=33 insts=961
+dxbc TestShaders/GameExamples/MGSV/000000006d7bf717-ps.bin: type=0 sm=4.0 decls=6 insts=3
+dxbc TestShaders/GameExamples/MGSV/00000000f2d09295-ps.bin: type=0 sm=4.0 decls=6 insts=11
+dxbc TestShaders/GameExamples/re2/0110cb7eba779c1d-cs.bin: type=5 sm=5.0 decls=12 insts=52
+dxbc TestShaders/GameExamples/re2/03cdbb1d64be7c53-cs.bin: type=5 sm=5.0 decls=11 insts=77
+dxbc TestShaders/GameExamples/re2/0595176bbd097b54-cs.bin: type=5 sm=5.0 decls=7 insts=7
+dxbc TestShaders/GameExamples/re2/1b0e69b5822a3086-cs.bin: type=5 sm=5.0 decls=11 insts=83
+dxbc TestShaders/GameExamples/re2/1d62a8c00ed1f398-cs.bin: type=5 sm=5.0 decls=12 insts=81
+dxbc TestShaders/GameExamples/re2/1e80aa2735aa2196-cs.bin: type=5 sm=5.0 decls=8 insts=78
+dxbc TestShaders/GameExamples/re2/2100df7cbf15f25b-cs.bin: type=5 sm=5.0 decls=9 insts=63
+dxbc TestShaders/GameExamples/re2/487a3303e222397f-cs.bin: type=5 sm=5.0 decls=5 insts=3
+dxbc TestShaders/GameExamples/re2/7f8c84dc0321a1ac-cs.bin: type=5 sm=5.0 decls=7 insts=15
+dxbc TestShaders/GameExamples/re2/81b1cb7882ac0625-ps.bin: type=0 sm=5.0 decls=4 insts=6
+dxbc TestShaders/GameExamples/re2/9b4b0a8af22165cc-cs.bin: type=5 sm=5.0 decls=7 insts=7
+dxbc TestShaders/GameExamples/re2/b63aa16c94606551-cs.bin: type=5 sm=5.0 decls=9 insts=385
+dxbc TestShaders/GameExamples/re2/d1be753b51e1709e-cs.bin: type=5 sm=5.0 decls=8 insts=78
+dxbc TestShaders/GameExamples/re2/d8f5182654da5a44-cs.bin: type=5 sm=5.0 decls=5 insts=3
+dxbc TestShaders/GameExamples/re2/ed740e7eec57dbde-cs.bin: type=5 sm=5.0 decls=9 insts=394
+dxbc TestShaders/GameExamples/re2/f1936c9f748ef9b0-ps.bin: type=0 sm=5.0 decls=3 insts=2
